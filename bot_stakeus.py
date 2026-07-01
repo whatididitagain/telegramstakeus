@@ -20,7 +20,7 @@ def send_welcome(message):
         "3️⃣ Free coins credited instantly to your account\n\n"
         "✅ Good luck!"
     )
-    bot.reply_to(message, text)
+    bot.send_message(message.chat.id, text)
 
 print("Stake US bot started...")
 bot.infinity_polling()
